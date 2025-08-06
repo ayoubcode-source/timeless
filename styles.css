@@ -347,3 +347,66 @@ body[dir="rtl"] .whatsapp-btn i {
 /* .whatsapp-btn:focus::after {
     animation: ripple 1s ease-out;
 } */
+
+/* ===== Base Mobile Styles ===== */
+@media (max-width: 768px) {
+  /* Navigation */
+  nav {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: none; /* Replace with hamburger menu if needed */
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 70vh;
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  /* Watch Gallery */
+  .watch-gallery {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* Watch Item - Replace hover with static layout */
+  .watch-item {
+    margin-bottom: 20px;
+  }
+
+  .watch-info {
+    position: relative;
+    transform: none; /* Always visible */
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .whatsapp-btn {
+    opacity: 1; /* Always visible */
+    width: 100%; /* Full-width button */
+    justify-content: center;
+  }
+
+  /* Price */
+  .price {
+    margin: 10px 0;
+  }
+}
+
+/* ===== Tap-Friendly WhatsApp Button ===== */
+.whatsapp-btn {
+  -webkit-tap-highlight-color: transparent; /* Remove blue tap highlight on mobile */
+}
+
+/* Ensure buttons/links are tappable */
+a, button {
+  min-width: 44px;
+  min-height: 44px;
+}

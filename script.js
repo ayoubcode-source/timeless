@@ -57,3 +57,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Replace hover effects with touch events for mobile
+if ('ontouchstart' in window) {
+  document.querySelectorAll('.watch-item').forEach(item => {
+    item.style.cursor = 'pointer'; // Visual feedback
+  });
+}
