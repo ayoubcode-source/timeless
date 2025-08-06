@@ -20,7 +20,7 @@ const watches = [
         name: "classic elegance",
         model: "SP-2024",
         image: "images/2watches bw.jpeg",
-        price: "370 DH",
+        price: "369 DH",
         whatsapp: "https://wa.me/212705182628?text=Hi,%20bghit%20nakhod%20hadi%203jbatni%20the%20Classic%20Elegance%20(CE-2024)",
         description: "Built for adventure and durability."
     },
